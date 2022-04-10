@@ -16,7 +16,8 @@
 4. [Optional] If you prefer to have the conda variable loaded upon opening your terminal, and your environment sourced, add the new conda environment variable to your ~/.bashrc file, along with the source command
     ```bash
    echo "export 'CONDA_DIR=${CONDA_DIR}'" >> $HOME/.bashrc
-   echo "source $CONDA_DIR/bin/activate" >> $HOME/.bashrc # add this to your .bashrc 
+   echo "source $CONDA_DIR/bin/activate" >> $HOME/.bashrc
+   echo 'eval "$(starship init bash)"' # add this to your .bashrc 
     ```
 5. Create a conda environment for the GATE framework:
     ```bash
