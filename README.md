@@ -27,7 +27,15 @@
 6. Install pytorch and torchvision:
     ```bash
     conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch-nightly -y
-   conda install opencv -y
-   conda install h5py -y
-   conda install micro bat git-lfs starship tmux -y
+    conda install opencv -y
+    conda install h5py -y
+    conda install micro bat git-lfs starship tmux -y
     ```
+7. Customize tmux:
+    ```bash
+    cd
+    git clone https://github.com/gpakosz/.tmux.git
+    ln -s -f .tmux/.tmux.conf
+    cp .tmux/.tmux.conf.local .
+    ```
+
